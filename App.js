@@ -1,8 +1,11 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import Home from './src/screens/Home';
 
+
 export default class App extends React.Component {
+
+
   render() {
     return (
       <View style={styles.container}>
@@ -17,6 +20,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFFDDF',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
 });
