@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import { Button, Icon, Text } from 'native-base';
+import { View } from 'react-native';
+import { Button } from 'react-native-elements'
 
 class ButtonCommon extends Component {
     render() {
         return (
-            <Button iconLeft dark>
-                <Icon name='cog' />
-                <Text>Settings</Text>
-            </Button>
+            <View>
+                <Button
+                    large
+                    raised
+                    backgroundColor= '#f44e42'
+                    title='START' />
+            </View>
         );
     }
 }

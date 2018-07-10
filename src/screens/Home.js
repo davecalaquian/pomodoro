@@ -21,10 +21,13 @@ class Home extends Component {
 
     render() {
         return (
-            <View>
+            <View style={styles.containerStyle}>
                 {
                     this.state.fontLoaded ? (
-                    <Text style={styles.textStyle}>00:00</Text>
+                    <View>
+                        <Text style={styles.textStyle}>00:00</Text>
+                        <ButtonCommon />
+                    </View>
                     ) : null
                 }
             </View>
@@ -33,8 +36,12 @@ class Home extends Component {
 }
 
 const styles = {
+    containerStyle: {
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
     textStyle: {
-        fontSize: 56,
+        fontSize: 125,
         fontFamily: 'karla-regular'
     }
 }
